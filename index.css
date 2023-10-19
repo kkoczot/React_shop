@@ -37,6 +37,7 @@ a {
 
 button {
   cursor: pointer;
+  background-color: unset;
 }
 
 /*** HEADER ***/
