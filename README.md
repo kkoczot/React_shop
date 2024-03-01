@@ -1,10 +1,10 @@
-# React Shop: React + Firebase + Vite
+# React Shop: React + React-Router-Dom + Firebase + Vite
 
 This site on <a href="https://react-firebase-shop.netlify.app/" targer="_blank">Netlify</a>
 
 ## English
 
-### This project is made using *react*, *firebase* and *vite* technologies.
+### This project is made using *react*, *react-router-dom*, *firebase* and *vite* technologies.
 
 **Description**: 
 The site connects to the firebase database and retrieves values ​​from it.
@@ -24,7 +24,7 @@ In addition, the website:
 
 ## Polski
 
-### Projekt wykonany za pomocą technologii *react*, *firebase* oraz *vite*.
+### Projekt wykonany za pomocą technologii *react*, *react-router-dom*, *firebase* oraz *vite*.
 
 **Opis**:
 Witryna łączy się z bazą danych firebase i pobiera z niej wartości.
