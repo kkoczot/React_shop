@@ -81,6 +81,7 @@ export default function LayoutCollection() {
                             colors.length ? colors.map(color => (
                                 <button 
                                     key={color.id}
+                                    aria-label={color.color}
                                     onClick={() => handleFilterChange("color", color.color)}
                                     className={`filters-btn-color ${colorFilter?.includes(color.color) ? "selected" : ""} ${color.color}`}
                                 ></button>
