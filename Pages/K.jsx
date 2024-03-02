@@ -25,11 +25,13 @@ export default function K() {
                     <img
                     id={photo[0].id}
                     src={photo[0].path}
+                    alt={getName(photo[photo.length - 1], clothes)}
                     className="collection-first"
                     />
                     <img
                     id={photo[photo.length - 1].id}
                     src={photo[photo.length - 1].path}
+                    alt={getName(photo[photo.length - 1], clothes)}
                     title={getName(photo[photo.length - 1], clothes)}
                     className="collection-second"
                     onMouseLeave={(e) => mouseHover(e)}
