@@ -13,7 +13,7 @@ export default function Home() {
     return (
         <div className="home">
             <div className="home-banner-wrapper">
-                <img className="home-banner" src={bannerUrl} />
+                <img className="home-banner" alt="Homepage banner" src={bannerUrl} />
                 <p className="home-banner-desc">Witaj na <span><span>#</span>Bluzkowo</span></p>
             </div>
             <div className="home-content">
