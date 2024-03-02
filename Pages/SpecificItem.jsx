@@ -109,9 +109,10 @@ export default function SpecificItem() {
                     <div className="specific-images-all">
                         {
                             thesePhotos.map(photo => (
-                               <button className="none-btn" key={photo.id}>
+                               <button className="none-btn" key={photo.id} aria-label={`Inne zdjęcie koszulki ${getName(id, dataDB[0])}`}>
                                     <img
                                     src={photo.path}
+                                    alt={getName(id, dataDB[0])}
                                     data-path={photo.path}
                                     onClick={(e) => setCurrentImagePath(e.target.dataset.path)}
                                     className="specific-image-thumbnail"
@@ -130,6 +131,7 @@ export default function SpecificItem() {
                             theseColors.map((color, i) => (
                                 <button
                                 key={i}
+                                aria-label={color}
                                 onClick={() => handleFilterChange("color", color)}
                                 className={`filters-btn-color ${color} ${colorFilter === color ? "selected" : ""}`}
                                 ></button>
