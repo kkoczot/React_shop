@@ -114,8 +114,8 @@ export default function Cart() {
             {
                 (document.cookie && !(boughtError.status)) && getCookies().map((cookie, i) => (
                     <div className="cart-item" key={i}>
-                            <Link to={`/${cookie.id}?size=${cookie.size}&color=${cookie.color}`}>
-                                <img className="cart-item-img" src={cookie.path} />
+                            <Link to={`/${cookie.id}?size=${cookie.size}&color=${cookie.color}`} aria-label={`Link do koszulki ${getName({ clothe_id: cookie.id }, clothes)}`}>
+                                <img className="cart-item-img" src={cookie.path} alt={getName({ clothe_id: cookie.id }, clothes)}/>
                             </Link>
                             <div className="cart-item-desc">
                                 <p>Ilość: {cookie.amount}</p>
@@ -123,7 +123,7 @@ export default function Cart() {
                                 <p>Kolor: {cookie.color}</p>
                                 <p>Cena: {checkZeros(cookie.price)}zł</p>
                             </div>
-                            <button className="cart-item-delete" onClick={() => deleteCookie(cookie)}>
+                            <button className="cart-item-delete" aria-label={`Usuń z koszyka koszulkę ${getName({ clothe_id: cookie.id }, clothes)}`} onClick={() => deleteCookie(cookie)}>
                                 <i className="fa-solid fa-circle-xmark"></i>
                             </button>
                     </div>
