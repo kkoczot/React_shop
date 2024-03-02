@@ -24,7 +24,7 @@ export default function Header(props) {
                     <NavLink to="K" className="header-nav-name header-nav-k" style={({isActive}) => isActive ? activeStyle : null}>
                         Kobiety
                     </NavLink>
-                    <NavLink to="/cart" className="header-nav-cart" style={({isActive}) => isActive ? activeStyleCart : null}>
+                    <NavLink to="/cart" aria-label="cart" className="header-nav-cart" style={({isActive}) => isActive ? activeStyleCart : null}>
                         {window.navigator.onLine ? <i className="fa-solid fa-cart-shopping"></i> : <b>C</b>}
                     </NavLink>
                 </nav>
