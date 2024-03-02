@@ -16,11 +16,13 @@ export default function Slider({photos, clothes, clothesAttr, colors}) {
                                 <img
                                 id={photo[0].id}
                                 src={photo[0].path}
+                                alt={getName(photo[photo.length - 1], clothes)}
                                 className="slider-item-img slider-item-img1"
                                 />
                                 <img
                                 id={photo[photo.length - 1].id}
                                 src={photo[photo.length - 1].path}
+                                alt={getName(photo[photo.length - 1], clothes)}
                                 title={getName(photo[photo.length - 1], clothes)}
                                 className="slider-item-img slider-item-img2"
                                 onMouseEnter={(e) => mouseHover(e)}
